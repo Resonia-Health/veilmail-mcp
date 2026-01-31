@@ -1,0 +1,57 @@
+{
+  "name": "@resonia/veilmail-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Veil Mail - enables AI agents to send emails, manage templates, and more",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "veilmail-mcp": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "veilmail",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "email",
+    "transactional-email",
+    "email-api"
+  ],
+  "author": "Resonia Inc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resonia/veil-mail"
+  },
+  "homepage": "https://veilmail.xyz/docs/sdk",
+  "bugs": {
+    "url": "https://github.com/resonia/veil-mail/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
