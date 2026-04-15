@@ -1,6 +1,10 @@
 # @resonia/veilmail-mcp
 
-A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that exposes Veil Mail API operations as tools for AI agents. This allows AI assistants like Claude, ChatGPT, and other MCP-compatible clients to send emails, manage templates, work with audiences, and retrieve analytics through natural language.
+A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that exposes Veil Mail API operations as tools for AI agents. This allows AI assistants like Claude, ChatGPT, Cursor, and other MCP-compatible clients to send emails, manage templates, work with audiences, and retrieve analytics through natural language.
+
+> **Veil Mail is the only email API with a first-class MCP server.** Resend, SendGrid, Mailgun, and Postmark don't offer MCP integrations — connecting them to Claude or Cursor requires hand-building a server. This one ships as `npx @resonia/veilmail-mcp` and drops straight into Claude Desktop or any MCP client with a single config entry. Ten tools covering emails, domains, templates, audiences, campaigns, and analytics.
+>
+> **Related:** [Veil Mail Node.js SDK](https://github.com/Resonia-Health/veilmail-node) · [Full MCP docs](https://veilmail.xyz/docs/mcp) · [AI assistant integration guides](https://veilmail.xyz/docs)
 
 ## Installation
 
